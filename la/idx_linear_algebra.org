@@ -1,0 +1,227 @@
+:PROPERTIES:
+:CREATED: [2024-01-24 Wed 15:46]
+:ID:       20240124T154648.144452
+:ROAM_ALIASES: "Unit Vectors"
+:END:
+#+TITLE: Linear Algebra
+#+DATE: 2024-01-24
+#+CATEGORY: 
+#+FILETAGS: zk index
+
+* [[https://youtube.com/playlist?list=PLFD0EB975BA0CC1E0][Khan Academy - Linear Algebra - Playlist YouTube]]
+
+* [[https://sharmaeklavya2.github.io/theoremdep/][TheoremDep]]
+:PROPERTIES:
+:CREATED:  [2024-02-01 23:29]
+:END:
+
+* T@IN Space
+:PROPERTIES:
+:CREATED:  [2024-01-24 18:02]
+:ID:       20240124T180230.123181
+:END:
+:LOGBOOK:
+- State "T@IN"       from "TODO"       [2024-01-24 Wed 18:26]
+- State "TODO"       from              [2024-01-24 Wed 18:13]
+:END:
+
+Space is an algebra structure composed of sets, operations and conditions.
+
+* T@IN Vector Spaces
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:47]
+:ID:       20240124T154925.829111
+:END:
+:LOGBOOK:
+- State "T@IN"       from "TODO"       [2024-01-24 Wed 18:26]
+- State "TODO"       from              [2024-01-24 Wed 18:13]
+:END:
+
+Vector space $V$ is a set with additional operations and conditions
+
+$V = (V, +, \cdot )$
+
+- [ ] write axioms/properties
+
+* T@IN Subspace
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:47]
+:ID:       20240124T154929.762605
+:END:
+:LOGBOOK:
+- State "T@IN"       from "TODO"       [2024-01-24 Wed 18:25]
+- State "TODO"       from              [2024-01-24 Wed 18:13]
+:END:
+
+Set $U$ which is a subset of set $V$ is called subspace when it also has operations (i.e., addition $+$ and multiplication $\cdot$) and conditions (i.e., axioms/properties) that makes them a [[id:20240124T154925.829111][Vector Spaces]] and when it satisfies the following properties:
+
+1. additive identity
+2. closed under multiplication
+3. closed under scalar multiplication
+
+- [ ] TODO
+
+* TODO Linear Combination
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:47]
+:ID:       20240124T154932.833149
+:END:
+:LOGBOOK:
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+* TODO Linearly Independent
+:PROPERTIES:
+:CREATED:  [2024-01-25 00:31]
+:ID:       20240125T003142.668605
+:END:
+
+* Span
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:48]
+:ID:       20240124T154935.764265
+:END:
+:LOGBOOK:
+- State "T@DONE"     from "TODO"       [2024-01-24 Wed 18:42]
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+
+The set of *all* [[id:20240124T154932.833149][Linear Combinations]] of a list of vectors $\ket{v_1}, ... , \ket{v_n}$ in [[id:20240124T154925.829111][Vector Space]] $V$ is called the span of $\ket{v_1}, ... , \ket{v_n}$ denoted by $\operatorname{span} ( \ket{v_1}, ... , \ket{v_n})$. In other words,
+
+\begin{equation}
+\operatorname{span}\left(v_1, \ldots, v_m\right)=\left\{a_1 v_1+\cdots+a_m v_m: a_1, \ldots, a_m \in \mathbf{F}\right\}
+\end{equation}
+
+
+** More
+
+- [[id:20240124T182249.086098][Hint on difference on the usage of word "Span"]]
+- emphasis in on the list of vectors
+- definition is taken from [[pdf:~/main/library/Zotero-Library/A/axler_2024_linear_algebra_done_right_4th.pdf::47++0.00;;annot-47-3][axler_2024_linear_algebra_done_right_4th.pdf: Page 47; Quoting: 2.4 definition: span]]
+  + it was to write it my own struggle...
+- Resources:
+  + [[https://youtu.be/Qm_OS-8COwU][Linear combinations and span | Khan Academy]]
+  + [[https://youtu.be/k7RM-ot2NWY\\][Linear combinations, span, and basis vectors | 3Blue1Brown]]
+
+
+* TODO Spans
+:PROPERTIES:
+:CREATED:  [2024-01-25 00:27]
+:ID:       20240125T002751.138049
+:END:
+
+
+** More
+
+- [[id:20240124T182249.086098][Hint on difference on the usage of word "Span"]]
+
+* Spanning Set
+:PROPERTIES:
+:CREATED:  [2024-01-24 17:34]
+:ID:       20240124T173447.982917
+:END:
+:LOGBOOK:
+- State "T@DONE"     from "TODO"       [2024-01-24 Wed 18:23]
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+A spanning set is a set of vectors $\set{ \ket{v_1}, ..., \ket{v_n} } \in V$ such that we can write any vector $\ket{v}$ in that vector space $V$ as linear combinations of those vectors $\ket{v} = \sum_{i} c_i \ket{v_i}$ where $c_i \in F$
+
+
+The span of $S$ is a subspace of $V$.?
+
+
+** More
+
+- [[id:20240124T182249.086098][Hint on difference on the usage of word "Span"]]
+
+
+* TODO Basis
+:PROPERTIES:
+:CREATED:  [2024-01-24 21:37]
+:ID:       20240124T213738.106628
+:END:
+
+The basis of a vector space $V$ is the set of [[id:20240125T003142.668605][Linearly Independent]] vectors that [[id:20240125T002751.138049][Spans]] the full space of $V$.
+
+** More
+
+- Resources:
+  + [[https://youtu.be/zntNi3-ybfQ][Basis of a subspace | Khan Academy]]
+
+
+* TODO Linear Map
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:48]
+:ID:       20240124T154942.867761
+:ROAM_ALIASES: "Linear Transformation"
+:END:
+:LOGBOOK:
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+* TODO Linear Operator
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:49]
+:ID:       20240124T155052.246615
+:END:
+:LOGBOOK:
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+* TODO Inner Product Space
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:52]
+:ID:       20240124T155326.695404
+:END:
+:LOGBOOK:
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+** More
+
+Resources:
+- [[https://youtu.be/o0br2HAcEuY][Inner Product Space Axioms, Hilbert Space in Quantum Mechanics, Dirac's Bra-Ket]]
+
+* TODO Hilbert Space
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:53]
+:ID:       20240124T155401.601194
+:END:
+:LOGBOOK:
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+
+
+
+
+* TODO Orthogonal
+:PROPERTIES:
+:CREATED:  [2024-01-24 18:43]
+:END:
+
+* TODO Normalized Vectors
+:PROPERTIES:
+:CREATED:  [2024-01-24 18:43]
+:END:
+
+* TODO Orthonormal
+:PROPERTIES:
+:CREATED:  [2024-01-24 18:43]
+:END:
+
+* TODO Orthonormal Bases
+:PROPERTIES:
+:CREATED:  [2024-01-24 15:54]
+:END:
+:LOGBOOK:
+- State "TODO"       from              [2024-01-24 Wed 18:17]
+:END:
+
+
+** More
+
+- [[https://youtu.be/7BFx8pt2aTQ][Introduction to orthonormal bases | Khan Academy]]
+- [[https://youtu.be/Y7vOtlEvl0c][Pauli Matrices in Quantum Mechanics, Orthonormal Basis for 2D Hilbert Space, Trace and Determinant]]
