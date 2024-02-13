@@ -27,21 +27,32 @@
 
 Space is an algebra structure composed of sets, operations and conditions.
 
-* T@IN Vector Spaces
-:PROPERTIES:
-:CREATED:  [2024-01-24 15:47]
-:ID:       20240124T154925.829111
-:END:
-:LOGBOOK:
-- State "T@IN"       from "TODO"       [2024-01-24 Wed 18:26]
-- State "TODO"       from              [2024-01-24 Wed 18:13]
-:END:
+* Vector Spaces
 
-Vector space $V$ is a set with additional operations and conditions
+Vector space $V$ is a set with additional operations and conditions.
 
-$V = (V, +, \cdot )$
+$V = (V, +, \cdot )$ where $V$ is a set.
 
-- [ ] write axioms/properties
+Operations:
+
+1. addition $+: V \times V \to V$.
+2. scalar multiplication $\cdot: F \times V \to V$ where $F$ is a field.
+
+Conditions:
+
+$\forall u, v, w \in V}$:
+
+3. commutativity: $u+v=v+u$.
+4. associativity: $(u+v)+w=u+(v+w)$.
+5. additive identity: $\exists 0 \in V: \forall v \in V: v+0=v$.
+6. additive inverse: $\forall v \in V: \exists -v \in V: v-v=0$.
+
+$\forall \lambda, \mu \in F$:
+
+7. associativity: $\lambda(\mu v)=(\lambda \mu) v$.
+8. distributive: $\lambda(v+w)=\lambda v+\lambda w$.
+9. distributive: $(\lambda+\mu) v=\lambda v+\mu v$.
+10. unitary (or unital): $\mathbbm{1} v=v, \mathbbm{1} \in F$.
 
 * T@IN Subspace
 :PROPERTIES:
